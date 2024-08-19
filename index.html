@@ -3,32 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO</title>
 </head>
 <body>
-    <div class="calculator">
-        <div id="display" class="display">0</div>
-        <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendNumber('/')">/</button>
-            <button onclick="appendNumber('')"></button>
-            <button onclick="appendNumber('-')">-</button>
-            <button onclick="appendNumber('7')">7</button>
-            <button onclick="appendNumber('8')">8</button>
-            <button onclick="appendNumber('9')">9</button>
-            <button onclick="appendNumber('+')">+</button>
-            <button onclick="appendNumber('4')">4</button>
-            <button onclick="appendNumber('5')">5</button>
-            <button onclick="appendNumber('6')">6</button>
-            <button onclick="calculateResult()" rowspan="2">=</button>
-            <button onclick="appendNumber('1')">1</button>
-            <button onclick="appendNumber('2')">2</button>
-            <button onclick="appendNumber('3')">3</button>
-            <button onclick="appendNumber('0')" colspan="2">0</button>
-            <button onclick="appendNumber('.')">.</button>
-        </div>
+    <header> 
+        <div class="detail">
+        <a href="#">PORTFOLIO</a>
+        <button>CONTACT ME</button>
     </div>
-    <script src="script.js"></script>
+        <div class="location">
+            <a class="one">HOME</a>
+            <a class="two" href="#About">ABOUT</a>
+            <a class="three" href="#Services">SERVICES</a>
+            <a class="four">SKILLS</a>
+            <a class="five">CONTACT</a>
+        </div>
+    </header>
+    <section class="name">
+       
+        <div> 
+        <h1> Hi,I'm JEEVADHARSHINI</h1>
+        <H2> Frontend Developer</H2>
+       </div>
+       <div class="photo">
+        <img src="office.jpg" alt="">
+    </div> 
+    </section>
+
+    <section id="About">
+        <div >
+            <img src="girl.jpg" alt="">
+        </div>
+        <div>
+            <h1>About Me</h1>
+            <h2>Developer and Designer</h2>
+            <p>As a web developer, I thrive on the challenge of transforming ideas into interactive, user-friendly websites and
+            applications. My day-to-day involves writing clean, efficient code in languages like HTML, CSS, and JavaScript, and
+            often diving into frameworks like React or Angular to enhance functionality. I enjoy collaborating with designers to 
+             ensure that the visual aspects of a site are both appealing and functional, and I take pride in optimizing performance
+             to provide the best user experience. Debugging and problem-solving are part of the job, and I find satisfaction in 
+             overcoming technical hurdles. Ultimately, my goal is to create seamless, engaging digital experiences that meet the need
+              of users and clients alike.</p>
+        </div>
+    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+    
+                    
+                </form>
+                <button type="submit">Send</button>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Jeevadharshini. All rights reserved.</p>
+            </div>
+        </footer>
+    
+    
 </body>
 </html>
